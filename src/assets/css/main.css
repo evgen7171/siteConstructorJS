@@ -1,0 +1,37 @@
+:root {
+    --sidebar-width: 200px;
+}
+
+#app {
+    position: relative;
+}
+
+.top-menu {
+    background-color: #868686;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 1rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: var(--sidebar-width, 200px);
+    z-index: 100;
+    padding: 10px;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    overflow-y: auto;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: var(--sidebar-width, 200px);
+}
+.site-elem:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
